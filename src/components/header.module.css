@@ -1,0 +1,70 @@
+header {
+    height: 60vh;
+    border-bottom: 1px, solid, black;
+    line-height: 1.4283;
+    position: relative;
+    background-image: url("../images/galaxy.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-content {
+    position: absolute;
+    top: 35%;
+    margin: 0;
+    width: 42%;
+    right: 30%;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(110, 53, 255);
+}
+.site-title {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 200;
+}
+.site-title a {
+    color: white;
+}
+.site-description {
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+header button {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    padding-left: .35em;
+    padding-right: .35em;
+    margin-top: 1em;
+}
+.nav-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+}
+.nav-container ul {
+    margin: 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9em;
+}
+.nav-container li {
+    background: none;
+    letter-spacing: .075em;
+    text-decoration: none;
+    padding: 5px 14px 5px 14px;
+}
+.nav-container a, .nav-container a:visited {
+    color: white;
+}

@@ -25,6 +25,16 @@ module.exports = {
         path: `${__dirname}/src/images`
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Julius Sans One`,
+          `Monserrat\:200,300,400,400i,700`
+        ],
+        display: `swap`,
+      }
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
   ],
