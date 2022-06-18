@@ -13,5 +13,5 @@ Should he nibble just a bit or take the whole thing?
 Would the punishment be any different?
 While he was deciding the dog ate the cheese.
 
-## Types of Cheese
+### Types of Cheese
 Blue Cheese, Brie, Camembert, Cheddar, Chèvre, Colby, Cotija, Cottage Cheese, Cream Cheese, Emmental, Feta Cheese, Fontina, Gorgonzola, Gouda, Gruyère, Havarti, Jarlsberg, Manchego, Mascarpone, Monterey Jack, Mozzarella, Muenster, Parmesan, Pecorino Romano, Ricotta, Roquefort, Stilton, String Cheese, Swiss, Taleggio, Wensleydale

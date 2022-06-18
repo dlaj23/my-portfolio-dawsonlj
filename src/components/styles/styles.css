@@ -17,3 +17,10 @@ a:hover {
 a:visited {
     color: rgb(221, 0, 255);
 }
+.cardGroup {
+    margin: 50px 40px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    justify-items: center;
+}

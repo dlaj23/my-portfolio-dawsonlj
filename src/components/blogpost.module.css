@@ -1,0 +1,38 @@
+.sectionTitle {
+    font-weight: 300;
+    font-family: cursive;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.blogTitle {
+    font-weight: 300;
+    font-family: sans-serif;
+    font-size: 1.6em;
+    margin-bottom: .25em;
+}
+.blogMeta {
+    font-weight: 300;
+    font-family: sans-serif;
+    font-size: 1.0em;
+    margin-bottom: .25em;
+    line-height: 1.5;
+    margin-bottom: 1.25em;
+}
+h2 {
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.1;
+}
+h3 {
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.1;
+    padding-top: .35em;
+    padding-bottom: .25em;
+}
+p {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.4;
+}

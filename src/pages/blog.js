@@ -2,6 +2,7 @@
 import * as React from 'react'
 import Layout from "../components/layout"
 import  { Link, useStaticQuery, graphql } from 'gatsby'
+import { sectionTitle, blogTitle, blogMeta } from '../components/blogpost.module.css'
 
 // Step 2: Define component
 const BlogPage = () => {
@@ -31,18 +32,18 @@ const BlogPage = () => {
         <main>
             <Layout>
             <title>Blog Page</title>
-            <h1>Its mostly Cheese</h1>
+            <h1 className={sectionTitle}>Its mostly Cheese</h1>
             <ul>
                 {data.allMarkdownRemark.edges.map(edge =>{
                     return (
                         <li key={edge.node.id}>
-                            <h2>
+                            <h2 className={blogTitle}>
                                 <Link to ={`/blog/${edge.node.fields.slug}/`}>
                                     {edge.node.frontmatter.title}
                                 </Link>
                             </h2>
                             <div>
-                                <span>
+                                <span className={blogMeta}>
                                     Posted on {edge.node.frontmatter.date} <span> / </span>{" "}
                                     {edge.node.timeToRead} min
                                 </span>

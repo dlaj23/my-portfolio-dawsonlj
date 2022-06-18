@@ -6,9 +6,9 @@ import { header,
     navContainer } from "./header.module.css"
 
 const Header = () => {
-    const triggerNavigation = () => {
+    /*const triggerNavigation = () => {
         navigate('/about')
-    }
+    }*/
     const data = useStaticQuery(graphql`
     {
         site {
@@ -24,8 +24,7 @@ const Header = () => {
     <header>
         <div className={heroContent}>
             <h1 className={siteTitle}><Link to="/">{data.site.siteMetadata.title}</Link></h1>
-            <h3 className={siteDescription}>{data.site.siteMetadata.description}</h3>
-            <button onClick={() => triggerNavigation()}>Learn More</button>
+            <h3 className={siteDescription}>This site is a tribute to cheese</h3>
         </div>
         <nav className={navContainer}>
             <ul>

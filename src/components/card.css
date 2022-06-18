@@ -1,0 +1,38 @@
+.card {
+    width: 300px;
+    position: relative;
+    overflow:hidden;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px black;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    background-color: blueviolet;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.card:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 30px 60px black;
+}
+.card:hover img {
+    transform: translateY(-14px);
+}
+
+.card img {
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    z-index: -1;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.card h3 {
+    color: black;
+    font-size: 1.6em;
+    width: 200px;
+    margin: 20px 0 0 20px;
+}
+.card p{
+    color: black;
+    margin: 20px 0 10px 20px;
+    font-size: 1em;
+    align-self: end;
+}

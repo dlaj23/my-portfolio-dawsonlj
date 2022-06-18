@@ -8,9 +8,9 @@ const AboutPage = () => {
     return (
         <main>
             <Layout>
-            <title>Dawson L.A. Johnson</title>
+            <title>About</title>
             <h1>About</h1>
-            <p>blah blah blahhhhh.</p>
+            <p>I couldn't really think of a topic to make a website on (I already have a portfolio), so I dedicated it to the delicious snack that is cheese!</p>
             <Link to="/">Home</Link>
             </Layout>
         </main>
