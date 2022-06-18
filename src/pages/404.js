@@ -1,5 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import styles from "../components/styles/styles.css"
+
 
 // styles
 const pageStyles = {

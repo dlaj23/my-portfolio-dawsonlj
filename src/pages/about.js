@@ -2,6 +2,8 @@
 import * as React from 'react'
 import  { Link } from 'gatsby'
 import Layout from "../components/layout"
+import styles from "../components/styles/styles.css"
+
 
 // Step 2: Define component
 const AboutPage = () => {

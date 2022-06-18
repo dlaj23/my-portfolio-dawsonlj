@@ -3,6 +3,8 @@ import * as React from 'react'
 import Layout from "../components/layout"
 import  { Link, useStaticQuery, graphql } from 'gatsby'
 import { sectionTitle, blogTitle, blogMeta } from '../components/blogpost.module.css'
+import styles from "../components/styles/styles.css"
+
 
 // Step 2: Define component
 const BlogPage = () => {

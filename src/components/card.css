@@ -5,7 +5,6 @@
     border-radius: 20px;
     box-shadow: 0 20px 40px black;
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    background-color: blueviolet;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -21,17 +20,18 @@
     position: absolute;
     top: 0;
     min-width: 100%;
+    scale: 10%;
     z-index: -1;
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .card h3 {
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 1.6em;
     width: 200px;
     margin: 20px 0 0 20px;
 }
 .card p{
-    color: black;
+    color: rgb(255, 255, 255);
     margin: 20px 0 10px 20px;
     font-size: 1em;
     align-self: end;

@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import  { Link } from 'gatsby'
 import { blogTitle } from '../components/blogpost.module.css'
 import Card from "../components/card"
+import styles from "../components/styles/styles.css"
 
 // Step 2: Define component
 const IndexPage = () => {
@@ -12,25 +13,21 @@ const IndexPage = () => {
       <Layout>
       <title>The Cheese Zone</title>
       <h1 className={blogTitle}>Welcome to Cheese Zone</h1>
-      <div>
+      <div className="cardGroup">
         <Card 
           title="Cheese Designs"
           text="Designed and created in Gatsby for the love of cheese"
-          image={require('../images/cz.jpg').defualt}
+          image={require('../images/feta.jpg').default}
         />
-        </div>
-        <div>
         <Card 
           title="Cheese Security"
           text="How to keep your good safe"
-          image={require('../images/galaxy.jpg').defualt}
+          image={require('../images/gouda.jpg').default}
         />
-        </div>
-        <div>
         <Card 
           title="Cheesey Ideas"
           text="Always glad to learn more!"
-          image={require('../images/cheese.jpg').defualt}
+          image={require('../images/chevre.jpg').default}
         />
       </div>
       <Link to="/about">About</Link>
