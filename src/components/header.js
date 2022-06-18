@@ -1,17 +1,30 @@
 import * as React from 'react'
-import  { Link } from 'gatsby'
+import  { Link, useStaticQuery, graphql } from 'gatsby'
 import { navigate } from 'gatsby'
-import { header, heroContent, siteTitle, siteDescription, navContainer } from "./header.module.css"
+import { header, 
+    heroContent, siteTitle, siteDescription, 
+    navContainer } from "./header.module.css"
 
 const Header = () => {
     const triggerNavigation = () => {
         navigate('/about')
     }
+    const data = useStaticQuery(graphql`
+    {
+        site {
+            siteMetadata {
+                author
+                description
+                title
+            }
+        }
+    }
+    `)
     return (
     <header>
         <div className={heroContent}>
-            <h1 className={siteTitle}><Link to="/">Dawson L.A. Johnson</Link></h1>
-            <h3 className={siteDescription}>Cybersecurity & Information Design</h3>
+            <h1 className={siteTitle}><Link to="/">{data.site.siteMetadata.title}</Link></h1>
+            <h3 className={siteDescription}>{data.site.siteMetadata.description}</h3>
             <button onClick={() => triggerNavigation()}>Learn More</button>
         </div>
         <nav className={navContainer}>

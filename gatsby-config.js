@@ -1,7 +1,10 @@
 module.exports = {
 
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://myportfoliodawsonljmain.gatsbyjs.io/`,
+    title: "Dawson L.A. Johnson",
+    description: "Cybersecurity and Information Design",
+    author: "Dawson Johnson"
   },
   plugins: [
     {
@@ -11,13 +14,13 @@ module.exports = {
         path: `${__dirname}/src/pages`
       },
     },
-    /*{
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
         path: `${__dirname}/src/posts`
       },
-    },*/
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -37,5 +40,6 @@ module.exports = {
     },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    "gatsby-transformer-remark",
   ],
 }
